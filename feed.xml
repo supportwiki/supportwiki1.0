@@ -3,7 +3,7 @@
     <title>supportwiki1.0</title>
     <link href="https://supportwiki.github.io/supportwiki1.0/feed.xml" rel="self" />
     <link href="https://supportwiki.github.io/supportwiki1.0" />
-    <updated>2019-09-27T02:03:08+05:30</updated>
+    <updated>2019-09-27T02:10:12+05:30</updated>
     <author>
         <name>Karthik Rameshkumar</name>
     </author>
@@ -17,7 +17,7 @@
         <link href="https://supportwiki.github.io/supportwiki1.0/demystifying-customer-effort-score-ces/"/>
         <id>https://supportwiki.github.io/supportwiki1.0/demystifying-customer-effort-score-ces/</id>
 
-        <updated>2019-09-27T02:03:03+05:30</updated>
+        <updated>2019-09-27T02:10:09+05:30</updated>
             <summary>
                 <![CDATA[
                     This is an anonymized interview that I had with the Head of a Global Customer Support team. He was labeled as an expert in Customer Effort Score (CES), so I reached out to him in Support Driven, a fast-growing Slack group where Support Professionals can&hellip;
@@ -44,8 +44,10 @@
 <div> </div>
 <div>The book claims that CSAT provides zero insight into the real meaningful indicators for a business. This made an impact on me because we were facing the same challenge as many other Zendesk customers. The <a href="https://support.zendesk.com/hc/en-us/articles/203662256-Using-customer-satisfaction-ratings-Professional-and-Enterprise">Zendesk CSAT benchmark</a> results show that everyone scores ~95%. It was a very inaccurate signal without real meaning for us. In 2015 we did achieve a 96.5% CSAT rating! &lt;- Great Work! </div>
 <div> </div>
-<div><img class="post__image" src="https://supportwiki.github.io/supportwiki1.0/media/posts/2/1_iDg7gir0ypVF-v-kltfqEQ.png" alt="" width="350" height="82"></div>
-<div><strong>Zendesk’s Built in CSAT Email</strong></div>
+<figure class="post__image post__image" ><img src="https://supportwiki.github.io/supportwiki1.0/media/posts/2/1_iDg7gir0ypVF-v-kltfqEQ.png" alt="Zendesk's Built-in CSAT Email" width="350" height="82">
+<figcaption >Zendesk's Built-in CSAT email</figcaption>
+</figure>
+<div><strong>lt in CSAT Email</strong></div>
 <br>
 <div>The core element of CES is to understand a customers likelihood to repurchase, and we wanted a way to tie back a customer’s experience to sales which is our business’s lifeblood. This led us to start investigating how to implement CES</div>
 <br>
@@ -60,41 +62,48 @@
 <h5 id="mcetoc_1dlnil0i61">What was the implementation process like?</h5>
 <br>
 <div>Towards the end of 2015 we started to do research for 3rd party tools and found that no one really has an out of the box customer effort survey integrated with Zendesk Triggers. We chose to implement a customer email via Survey Gizmo.</div>
-<br>
-<div><img class="post__image" src="https://supportwiki.github.io/supportwiki1.0/media/posts/2/1_gGKDu-8YlSesNv5Ui4GIZw.png" alt="" width="1292" height="336"></div>
-<h5 id="mcetoc_1dlnkc2ms2"><strong>First CES Survey Version from January 2016:</strong></h5>
+<figure class="post__image post__image" ><img src="https://supportwiki.github.io/supportwiki1.0/media/posts/2/1_gGKDu-8YlSesNv5Ui4GIZw.png" alt="" width="1292" height="336">
+<figcaption >First CES Survey Version from January 2016:</figcaption>
+</figure>
 <br>
 <div>Upon implementation, we immediately started to see a substantial decrease in our response rate. With Zendesk, we saw an 18% response rate when asking customers for CSAT. The reply rate dropped to 8% because no one wants the promise of a “2 minute survey” that will actually take 10 minutes. Fortunately, we had engineering support and we started to build our own tool in January which would embed the question directly in the email.</div>
-<br>
-<div><img class="post__image" src="https://supportwiki.github.io/supportwiki1.0/media/posts/2/1_8-cRnJieSsV27j293gH3rQ.png" alt="" width="386" height="356"></div>
-<div><strong>Updated and Current CES Email</strong></div>
+<figure class="post__image post__image" ><img src="https://supportwiki.github.io/supportwiki1.0/media/posts/2/1_8-cRnJieSsV27j293gH3rQ.png" alt="" width="386" height="356">
+<figcaption >Updated and Current CES Ema</figcaption>
+</figure>
 <br>
 <div>We custom-built a service that would listen for the Zendesk solved ticket trigger. The service sits between Zendesk and Marketo, which we use to email customers. When a customer selects their response [in the email] it saves the feedback and they land on a page where they can provide comments.</div>
 <div> </div>
 <div>Our response rate shot up to 22%, which was even greater than our CSAT measurement!</div>
 <br>
-<div><img class="post__image" src="https://supportwiki.github.io/supportwiki1.0/media/posts/2/1_bkcxkSFXq_z1l5RHCHkrEQ.png" alt="" width="1196" height="534"></div>
-<div><strong>Example of how to capture comments in a custom-built tool</strong></div>
-<br>
-<h5 id="mcetoc_1dlnirv1u2">How do you calculate CES?</h5>
+<figure class="post__image post__image" ><img src="https://supportwiki.github.io/supportwiki1.0/media/posts/2/1_bkcxkSFXq_z1l5RHCHkrEQ.png" alt="" width="1196" height="534">
+<figcaption >Example of how to capture comments in a custom-built tool</figcaption>
+</figure>
+<h5 id="mcetoc_1dlnkooqt0">How do you calculate CES?</h5>
 <br>
 <div>When we capture a customer’s response we push the rating and comments into Zendesk via their API. We get a lot of comments and they’re added directly to the original ticket in the form of internal notes. We perform data analysis using GoodData. If a customer Agrees or Strongly Agrees, we consider it a positive interaction, everything else is a thumbs down.</div>
 <br>
 <div>They look at the percentage they receive in each category:</div>
 <br>
-<div><img class="post__image" src="https://supportwiki.github.io/supportwiki1.0/media/posts/2/1_jd7fMx_weO8-w92B1HnhnQ.png" alt="" width="1154" height="688"></div>
-<div><strong>Sample CES Dashboard</strong></div>
+<div> </div>
+<div> </div>
 <br>
 <div>Ideally, more customers would respond with “Agree” over “Strongly Agree” because Strongly Agree indicates that it’s not a complicated question and could be solved effectively with self-service. If a high percentage of strongly agree, it might be the difference between hiring a 20 person team vs. 30 person team. In the book, it says the ideal graph shape is a bell-curve.</div>
 <div> </div>
 <div>When a customer emails us, our agents are responsible for tagging a ticket for the main topic. It’s a mandatory field in order to solve a ticket. When we do analysis we tie CES to the ticket, agent(s), and product feature to identify where the holes are.</div>
+<figure class="post__image post__image" ><img src="https://supportwiki.github.io/supportwiki1.0/media/posts/2/1_jd7fMx_weO8-w92B1HnhnQ.png" alt="" width="1154" height="688">
+<figcaption >Sample CES Dashboard</figcaption>
+</figure>
 <h5 id="mcetoc_1dlnitrg73">What insight has CES provided?</h5>
 <br>
 <div>From an insights standpoint, we haven’t drawn out anything super insightful yet because we know [the existing] challenging items for the customers. The biggest difference from CSAT is that CES is a stronger signal, it’s so much more distinct. With CES the same topic will be overwhelmingly 50% positive vs 80% with CSAT.</div>
-<br><br>
-<div><img class="post__image" src="https://supportwiki.github.io/supportwiki1.0/media/posts/2/1_1Gh5vLdLRvbvLDPj33Zzug.png" alt="" width="1376" height="752"></div>
+<figure class="post__image post__image" ><img src="https://supportwiki.github.io/supportwiki1.0/media/posts/2/1_1Gh5vLdLRvbvLDPj33Zzug.png" alt="" width="1376" height="752">
+<figcaption >
+<div> </div>
 <div><strong>Sample CES Dashboard in GoodData</strong></div>
+</figcaption>
+</figure>
 <br>
+<div> </div>
 <h5 id="mcetoc_1dlnj1r834">Rapid fire, what else should we know about CES?</h5>
 <ul style="list-style-type: circle;">
 <li>We want to redo the email on a linear scale &amp; not vertical.</li>
