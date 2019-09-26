@@ -3,21 +3,21 @@
     <title>supportwiki1.0</title>
     <link href="https://supportwiki.github.io/supportwiki1.0/feed.xml" rel="self" />
     <link href="https://supportwiki.github.io/supportwiki1.0" />
-    <updated>2019-09-27T01:55:43+05:30</updated>
+    <updated>2019-09-27T02:03:08+05:30</updated>
     <author>
         <name>Karthik Rameshkumar</name>
     </author>
     <id>https://supportwiki.github.io/supportwiki1.0</id>
 
     <entry>
-        <title>Demystifying Customer Effort Score (CES)</title>
+        <title>Customer Effort Score (CES)</title>
         <author>
             <name>Karthik Rameshkumar</name>
         </author>
         <link href="https://supportwiki.github.io/supportwiki1.0/demystifying-customer-effort-score-ces/"/>
         <id>https://supportwiki.github.io/supportwiki1.0/demystifying-customer-effort-score-ces/</id>
 
-        <updated>2019-09-27T01:53:51+05:30</updated>
+        <updated>2019-09-27T02:03:03+05:30</updated>
             <summary>
                 <![CDATA[
                     This is an anonymized interview that I had with the Head of a Global Customer Support team. He was labeled as an expert in Customer Effort Score (CES), so I reached out to him in Support Driven, a fast-growing Slack group where Support Professionals can&hellip;
@@ -25,17 +25,16 @@
             </summary>
         <content type="html">
             <![CDATA[
-                <h4 id="mcetoc_1dlni3qci1">This is an anonymized interview that I had with the Head of a Global Customer Support team. He was labeled as an expert in Customer Effort Score (CES), so I reached out to him in <a href="https://supportdriven.com/" target="_blank" rel="noopener noreferrer">Support Driven</a>, a fast-growing Slack group where Support Professionals can connect with one another. I wanted to better understand CES, how to implement it, and generally find another connection in the support world.</h4>
-<h4 id="mcetoc_1dlni3qci2">Throughout our discussion I received more than I was expecting. He blew me away with how thoroughly he explained the concepts along with how thoughtfully they researched and implemented CES. This post is my way to give back to the Support Driven Community.</h4>
-<h4 id="mcetoc_1dlni3qci3">In this interview we learn more about his decision to use CES, what CES is, and an idea of how to implement it. Without further ado, here’s the interview.</h4>
+                <p id="mcetoc_1dlni3qci1">This is an anonymized interview that I had with the Head of a Global Customer Support team. He was labeled as an expert in Customer Effort Score (CES), so I reached out to him in <a href="https://supportdriven.com/" target="_blank" rel="noopener noreferrer">Support Driven</a>, a fast-growing Slack group where Support Professionals can connect with one another. I wanted to better understand CES, how to implement it, and generally find another connection in the support world.</p>
+<p id="mcetoc_1dlni3qci2">Throughout our discussion I received more than I was expecting. He blew me away with how thoroughly he explained the concepts along with how thoughtfully they researched and implemented CES. This post is my way to give back to the Support Driven Community.</p>
+<p id="mcetoc_1dlni3qci3">In this interview we learn more about his decision to use CES, what CES is, and an idea of how to implement it. Without further ado, here’s the interview.</p>
 <h4 id="mcetoc_1dlni3lsr0"><strong>Interview</strong></h4>
 <h5 id="mcetoc_1dlni3qci4">Tell us about your team:</h5>
 <br>
 <div>We’re a team of ~50 people, working 24/7, doing about ~10k tickets per month! We’re spread between [California, South America, and Eastern Europe]. Our team is extremely knowledgable about our product and the questions we receive are very in-depth. We support [sic] software, and answer all conceivable questions about how to use the product, best practices, etc. A typical customer response is 3–5 paragraphs, written free-form and customized for each inquiry. Our team really knows the product inside and out</div>
 <div> </div>
 <div>In order to keep this all running, we support our agents with 3 tier-1 support managers, a manager for tier-2, a documentation writer, and an extensive training team of 3 people. The training team onboards 2–5 people per month, and it takes 2–2.5 months to become fully proficient</div>
-<br>
-<div><strong>What type of performance do you measure?</strong></div>
+<h5 id="mcetoc_1dlnk8bg71"><strong>What type of performance do you measure?</strong></h5>
 <br>
 <div>We measure the typical things such as Time to First Response. We also have targets to answer all 90% of chats within 30 seconds and 90% of calls within 60 seconds. In the past we measured CSAT which we’ve replaced with Customer Effort Score (CES)</div>
 <div> </div>
@@ -43,27 +42,27 @@
 <br>
 <div>Last year I read the book called "<em><a href="(https:/www.amazon.com/Effortless-Experience-Conquering-Battleground-Customer-ebook/dp/B00C5R73I8/ref=tmm_kin_swatch_0?_encoding=UTF8&amp;qid=1466720895&amp;sr=1-1" target="_blank" rel="noopener noreferrer">The Effortless Experience: Conquering the New Battleground for Customer Loyalty</a></em> " and chapter 6 completely changed how I thought about measuring the customer experience; It inspired me! It provides different ways to phrase questions and receive results for customer feedback. It’s very scientific yet easy to understand. The whole book is great</div>
 <div> </div>
-<div>The book claims that CSAT provides zero insight into the real meaningful indicators for a business. This made an impact on me because we were facing the same challenge as many other Zendesk customers. The Zendesk CAST benchmark results show that everyone scores ~95%. It was a very inaccurate signal without real meaning for us. In 2015 we did achieve a 96.5% CSAT rating! &lt;- Great Work! </div>
-<br>
-<div>![](https://support.zendesk.com/hc/en-us/articles/203662256-Using-customer-satisfaction-ratings-Professional-and-Enterprise)</div>
-<br>
-<div>![](https://miro.medium.com/max/700/1*iDg7gir0ypVF-v-kltfqEQ.png)</div>
-<div>*Zendesk’s Built in CSAT Email*</div>
+<div>The book claims that CSAT provides zero insight into the real meaningful indicators for a business. This made an impact on me because we were facing the same challenge as many other Zendesk customers. The <a href="https://support.zendesk.com/hc/en-us/articles/203662256-Using-customer-satisfaction-ratings-Professional-and-Enterprise">Zendesk CSAT benchmark</a> results show that everyone scores ~95%. It was a very inaccurate signal without real meaning for us. In 2015 we did achieve a 96.5% CSAT rating! &lt;- Great Work! </div>
+<div> </div>
+<div><img class="post__image" src="https://supportwiki.github.io/supportwiki1.0/media/posts/2/1_iDg7gir0ypVF-v-kltfqEQ.png" alt="" width="350" height="82"></div>
+<div><strong>Zendesk’s Built in CSAT Email</strong></div>
 <br>
 <div>The core element of CES is to understand a customers likelihood to repurchase, and we wanted a way to tie back a customer’s experience to sales which is our business’s lifeblood. This led us to start investigating how to implement CES</div>
 <br>
 <h5 id="mcetoc_1dlniigtl0">Tell us what CES is?</h5>
 <br>
+<blockquote>
 <div>Customer Effort Score is a question that asks if “the company made it easy for me to handle my issue” and allows the customer to answer on a range from “strongly disagree” to “strongly agree”.</div>
+</blockquote>
 <br>
 <div><img class="post__image" src="https://supportwiki.github.io/supportwiki1.0/media/posts/2/1_koZ0vEUOyO5rPC46vqok6w.png" alt="CES Survey" width="1694" height="526"></div>
 <br>
 <h5 id="mcetoc_1dlnil0i61">What was the implementation process like?</h5>
 <br>
-<div>Towards the end of 2015 we started to do research for 3rd party tools and found that no one really has an out of the box customer effort survey integrated with Zendesk Triggers. We chose to implement a customer email via Survey Gizmo._</div>
+<div>Towards the end of 2015 we started to do research for 3rd party tools and found that no one really has an out of the box customer effort survey integrated with Zendesk Triggers. We chose to implement a customer email via Survey Gizmo.</div>
 <br>
 <div><img class="post__image" src="https://supportwiki.github.io/supportwiki1.0/media/posts/2/1_gGKDu-8YlSesNv5Ui4GIZw.png" alt="" width="1292" height="336"></div>
-<div><strong>First CES Survey Version from January 2016</strong></div>
+<h5 id="mcetoc_1dlnkc2ms2"><strong>First CES Survey Version from January 2016:</strong></h5>
 <br>
 <div>Upon implementation, we immediately started to see a substantial decrease in our response rate. With Zendesk, we saw an 18% response rate when asking customers for CSAT. The reply rate dropped to 8% because no one wants the promise of a “2 minute survey” that will actually take 10 minutes. Fortunately, we had engineering support and we started to build our own tool in January which would embed the question directly in the email.</div>
 <br>
