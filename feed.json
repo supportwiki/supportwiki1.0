@@ -1,0 +1,13 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "supportwiki1.0",
+    "description": "",
+    "home_page_url": "https://supportwiki.github.io/supportwiki1.0",
+    "feed_url": "https://supportwiki.github.io/supportwiki1.0/feed.json",
+    "user_comment": "",
+    "author": {
+        "name": "Karthik Rameshkumar"
+    },
+    "items": [
+    ]
+}
